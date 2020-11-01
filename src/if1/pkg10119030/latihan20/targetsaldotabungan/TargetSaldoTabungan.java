@@ -24,11 +24,10 @@ public class TargetSaldoTabungan {
     }
     private void tampilSaldo(){
         int num = 1;
-                
         while(saldo<= target){
             saldo = saldo + (saldo * bunga);
             System.out.print("Saldo di bulan ke-"+(num++)+" Rp. ");
-            System.out.printf(locale, "%,0f%n", saldo);
+            System.out.printf(locale, "%,.0f%n", saldo);
         }
     }
     public static void main(String[] args){
